@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import PostsListingPage from "./pages/PostsListingPage";
 import PostPage from "./pages/PostPage";
+import NavBar from "./Components/NavBar";
 import logo from "./logo.svg";
 import "./App.css";
 
@@ -12,6 +13,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <header className="App-header">
+          <NavBar />
           <img src={logo} className="App-logo" alt="logo" />
         </header>
         <Route path="/" exact>
