@@ -1,7 +1,7 @@
 export const postContent = [
-  { name: "first-post", title: "New Release", content: "New release..." },
+  { id: "first-post", title: "New Release", content: "New release..." },
   {
-    name: "second-post",
+    id: "second-post",
     title: "Work",
     content: `New post Open book: 
 Cleaner async JavaScript code without the try/catch mess using safeAwait pattern`,
@@ -9,7 +9,7 @@ Cleaner async JavaScript code without the try/catch mess using safeAwait pattern
       "https://davidwells.io/blog/cleaner-async-await-code-without-try-catch",
   },
   {
-    name: "third-post",
+    id: "third-post",
     title: "Conference",
     content: "Watching React Europe 2020",
   },

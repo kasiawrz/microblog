@@ -5,7 +5,7 @@ import { postContent } from "../assets/posts";
 
 const PostPage = () => {
   const { name } = useParams();
-  const selectedPost = postContent.find((post) => post.name === name);
+  const selectedPost = postContent.find((post) => post.id === name);
   return (
     <div>
       <p>{selectedPost.title}</p>
