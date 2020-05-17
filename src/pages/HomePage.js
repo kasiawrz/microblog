@@ -1,10 +1,10 @@
 import React from "react";
-import Post from "./Post";
+import PostListingPage from "./PostsListingPage";
 
 const HomePage = () => (
   <>
     <h1>Engineering Microblog 👩🏼‍💻</h1>
-    <Post />
+    <PostListingPage />
   </>
 );
 
