@@ -1,19 +1,17 @@
 import React from "react";
 import { postContent } from "../assets/posts";
 
-const postArticles = postContent.map((post) => (
-  <div>
-    <h3>{post.title}</h3>
-    <p>{post.content}</p>
-    <a href={post.link}> link </a>
-  </div>
-));
+const Post = ({ name }) => {
+  const selectedPost = postContent.find((post) => post.id === name);
 
-const Post = () => (
-  <div>
-    {/* {currentPost} */}
-    {postArticles}
-  </div>
-);
+  return (
+    <div>
+      <div>
+        <h3>{selectedPost.title}</h3>
+        <div>{selectedPost.content}</div>
+      </div>
+    </div>
+  );
+};
 
 export default Post;

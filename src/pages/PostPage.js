@@ -1,15 +1,12 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-// import Post from "../Components/Post";
-import { postContent } from "../assets/posts";
+import Post from "../Components/Post";
 
 const PostPage = () => {
   const { name } = useParams();
-  const selectedPost = postContent.find((post) => post.id === name);
   return (
     <div>
-      <p>{selectedPost.title}</p>
-      <div>{selectedPost.content}</div>
+      <Post name={name} />
     </div>
   );
 };
